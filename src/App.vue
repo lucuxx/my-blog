@@ -4,7 +4,12 @@
     <router-view style="padding-bottom: 100px" />
     <el-footer
       style="background-color: #7387fe;text-align: center;color: white;line-height: 60px"
-      >Copyright© 2019-2020 版权所有 lucux</el-footer
+      >Copyright© 2019-2020 lucux 版权所有
+      <a
+        style="color:#fff;text-decoration:none;"
+        href="http://www.beian.miit.gov.cn"
+        >粤ICP备20037247号-1</a
+      ></el-footer
     >
   </div>
 </template>
