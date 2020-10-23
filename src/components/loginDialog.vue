@@ -59,13 +59,12 @@ export default class login extends Vue {
   }
 
   urls: Array<string> = [
-    'http://img3.imgtn.bdimg.com/it/u=2889245078,2337422891&fm=11&gp=0.jpg',
-    'http://img5.imgtn.bdimg.com/it/u=3237244987,2362958894&fm=11&gp=0.jpg',
-    'http://img4.imgtn.bdimg.com/it/u=981062426,929887718&fm=11&gp=0.jpg',
-    'http://img5.imgtn.bdimg.com/it/u=688907418,2694172841&fm=15&gp=0.jpg',
-    'http://img0.imgtn.bdimg.com/it/u=2315919914,3549027314&fm=26&gp=0.jpg',
-    'http://img1.imgtn.bdimg.com/it/u=3672672793,577445658&fm=26&gp=0.jpg',
-    'http://img3.imgtn.bdimg.com/it/u=2156695582,3886614243&fm=26&gp=0.jpg',
+    'https://i.loli.net/2020/10/24/n1SK93CI6BA2Wxu.jpg',
+    'https://i.loli.net/2020/10/24/rGLxOIaZEsMp3q2.jpg',
+    'https://i.loli.net/2020/10/24/1LFNnUHYCqouylK.jpg',
+    'https://i.loli.net/2020/10/24/ntqyX8CDRvI1pli.jpg',
+    'https://i.loli.net/2020/10/24/pAkCHVhb3tX7IZe.jpg',
+    'https://i.loli.net/2020/10/24/4ZDyu2cYgxfOQjH.jp',
   ]
 
   @Prop(Boolean) dialogVisible = false

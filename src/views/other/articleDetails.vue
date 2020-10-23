@@ -31,7 +31,7 @@
             id="copy"
             style="outline: none;border: none;width: 0;height: 0;resize:none"
           >
-http://skyclub.cloud/details?id={{ articleId }}</textarea
+https://skyclub.cloud/details?id={{ articleId }}</textarea
           >
         </div>
         <div class="next-body">
@@ -77,7 +77,7 @@ http://skyclub.cloud/details?id={{ articleId }}</textarea
         <div style="margin-top: 20px" v-else>暂无相关文章</div>
       </el-card>
       <el-card class="card">
-        <p>发表评论（{{ _.size(currentArticleInfo.commentData) }}条评论）</p>
+        <p>发表评论（{{ _.size(currentArticleInfo.) }}条评论）</p>
         <commentList
           :commentData="_.reverse(currentArticleInfo.commentData)"
           :userId="_.get(userInfo, 'userId') || ''"

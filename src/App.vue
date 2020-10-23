@@ -5,9 +5,7 @@
     <el-footer
       style="background-color: #7387fe;text-align: center;color: white;line-height: 60px"
       >Copyright© 2019-2020 lucux 版权所有
-      <a
-        style="color:#fff;text-decoration:none;"
-        href="http://www.beian.miit.gov.cn"
+      <a style="color:#fff;text-decoration:none;" :href="urlinfo"
         >粤ICP备20037247号-1</a
       ></el-footer
     >
@@ -19,7 +17,9 @@ import { Vue, Component } from 'vue-property-decorator'
 import HeaderNav from './views/other/header.vue'
 
 @Component({ components: { HeaderNav } })
-export default class App extends Vue {}
+export default class App extends Vue {
+  urlinfo: string = 'http://www.beian.miit.gov.cn/'
+}
 </script>
 
 <style lang="less">

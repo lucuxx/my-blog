@@ -4,7 +4,7 @@
       <img :src="avatar" alt="头像加载失败" />
       <p class="autograph">Lucux</p>
       <p class="autograph">邮箱： lucuxxs@gmail.com</p>
-      <p class="autograph">skyclub -- 致力于技术交流与分享的一个平台</p>
+      <p class="autograph">skyclub -- 致力于技术交流与分享的平台</p>
     </div>
   </section>
 </template>
@@ -37,7 +37,7 @@ export default class AuthorNav extends Vue {
     width: 100%;
     .autograph {
       text-align: left;
-      margin-left: 30px;
+      margin: 0 30px;
     }
     img {
       /*padding-top: 50px;*/
