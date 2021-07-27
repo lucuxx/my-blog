@@ -30,7 +30,7 @@ jobs:
       - name: use Node.js 12
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: "12.x"
        # npm install
       - name: npm install and build
         run: |
@@ -40,10 +40,10 @@ jobs:
           CI: true
        # Deploy
       - name: Deploy to aliyun server
-        uses: easingthemes/ssh-deploy@main
+        uses: easingthemes/ssh-deploy@v2.1.7
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}  #这个是阿里云的私钥
-          ARGS: "-rltgoDzvO --delete"
+          ARGS: "-avz --delete"
           SOURCE: "dist/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}    #阿里云的 ip
           REMOTE_USER: ${{ secrets.REMOTE_USER }}   #阿里云用户
