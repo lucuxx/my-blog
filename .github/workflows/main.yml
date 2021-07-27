@@ -26,13 +26,26 @@ jobs:
       - uses: actions/checkout@v2
         with:
             persist-credentials: false
+       # 使用 node:10
+      - name: use Node.js 10
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10
+       # npm install
+      - name: npm install and build
+        run: |
+          npm install
+          npm run build
+        env:
+          CI: true
+       # Deploy
       - name: Deploy to aliyun server
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}  #这个是阿里云的私钥
-          ARGS: "-avzr --delete"
+          ARGS: "-avz --delete"
           SOURCE: "./"
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}    #阿里云的 ip
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}    #阿里云用户
+          REMOTE_HOST: "[Domain]"    #阿里云的 ip
+          REMOTE_USER: "[UserName]"   #阿里云用户
           TARGET: "/home/www/test-action"       #被部署的服务器路径 
 
