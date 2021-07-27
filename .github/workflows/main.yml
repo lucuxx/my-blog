@@ -40,7 +40,7 @@ jobs:
           CI: true
        # Deploy
       - name: Deploy to aliyun server
-        uses: easingthemes/ssh-deploy@v2.0.5
+        uses: easingthemes/ssh-deploy@v2.1.7
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}  #这个是阿里云的私钥
           ARGS: "-avzr --delete"
