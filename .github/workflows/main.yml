@@ -27,10 +27,10 @@ jobs:
         with:
             persist-credentials: false
        # 使用 node:12
-      - name: use Node.js 14
+      - name: use Node.js 12
         uses: actions/setup-node@v1
         with:
-          node-version: "14.x"
+          node-version: "12.x"
        # npm install
       - name: npm install and build
         run: |
